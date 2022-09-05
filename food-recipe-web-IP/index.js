@@ -9,9 +9,9 @@ searchBtn.addEventListener('click', getMealList)
 function getMealList(){
     let searchInputText = document.getElementById('search-input').value.trim();
     //console.log(searchInputText);
-    fetch('https://www.themealdb.com/api/json/v1/1/filter.php?i=egg')
+    fetch('https://www.themealdb.com/api/json/v1/1/filter.php?i=${searchInputText}')
     .then(resp => resp.json())
-    .then(data => {
+    .then(data => /*console.log(data)*/{
         let html = "";
         if(data.meals){
             data.meals.forEach(meal =>{
@@ -27,7 +27,11 @@ function getMealList(){
                 </div>
             `;
             });
+            mealList.classList.remove('notFound')
+        } else{
+            html = "OOPs! We couldn't find any meal";
+            mealList.classList.add('notFound');
         }
-        //mealList.innerHTML = html;
+        mealList.innerHTML = html;
     });
 }
