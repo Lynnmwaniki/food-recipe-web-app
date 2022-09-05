@@ -5,7 +5,7 @@
 ### Version
 
 ## Description
-This is a web application that shows details about the services and types of pizza they sell, their menu and how to order for a pizza online depending on the flavour, size and crust for the pizza.
+
 
 ## Project live site
 
