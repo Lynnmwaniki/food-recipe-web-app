@@ -13,9 +13,9 @@ This is a website that is able to generate meal recipes after you've typed in th
 
 
 ## Technologies used
--HTML- which was used to build the structure of the pages.
--CSS  - which was used to style the pages
--JAVASCRIPT -which was used to make the website more interactive.
+<p>-HTML- which was used to build the structure of the pages.</p>
+<p>-CSS  - which was used to style the pages</p>
+<p>-JAVASCRIPT -which was used to make the website more interactive.</p>
 
 ## BDD
 
