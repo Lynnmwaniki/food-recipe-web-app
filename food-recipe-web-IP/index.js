@@ -1,11 +1,15 @@
 const searchBtn = document.getElementById('search-btn');
 const mealList = document.getElementById('meal');
 const mealDetailsContent = document.querySelector('meal-details-content');
-const recipeCloseBtn = document.getElementById('recipe-close-btn')
+const recipeCloseBtn = document.getElementById('recipe-close-btn');
 
 // adding event listeners
 searchBtn.addEventListener('click', getMealList);
 mealList.addEventListener('click', getMealRecipe);
+recipeCloseBtn.addEventListener('click', () => {
+    mealDetailsContent.parentElement.classList.remove('showRecipe');
+});
+
 
 // get the list of meals that match with the ingredients
 function getMealList(){
