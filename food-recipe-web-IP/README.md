@@ -7,7 +7,7 @@
 This is a website that is able to generate meal recipes after you've typed in the ingredient that you want to use. After choosing the meal, it will bring up a modal that will display the instructions of how to prepare the meal.
 
 ## Project live site
-
+* (https://lynnmwaniki.github.io/food-recipe-web-app/)
 
 ## Set up instructions
 * Clone the program
